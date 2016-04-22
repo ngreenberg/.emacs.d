@@ -1,6 +1,8 @@
 ; list the packages you want
 (setq package-list '(solarized-theme
-		     smex ido-ubiquitous direx))
+		     smex ido-ubiquitous direx
+		     flycheck company
+		     magit))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")))
