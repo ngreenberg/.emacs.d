@@ -30,3 +30,8 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+
+;; show matching parens
+(setq show-paren-delay 0)
+(show-paren-mode 1)
+(setq show-paren-style 'expression)

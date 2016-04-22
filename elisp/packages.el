@@ -1,6 +1,6 @@
 ; list the packages you want
 (setq package-list '(solarized-theme
-		     smex))
+		     smex ido-ubiquitous direx))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")))
