@@ -7,7 +7,7 @@
 ;; set transparency
 (set-frame-parameter (selected-frame) 'alpha '(93 93))
 
-;; set font size
+;; set font-size
 (set-face-attribute 'default (selected-frame) :height 90)
 
 (tool-bar-mode -1)
