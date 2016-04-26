@@ -2,10 +2,13 @@
 (setq package-list '(solarized-theme
 		     smex ido-ubiquitous direx
 		     flycheck company
-		     magit))
+		     magit
+		     web-mode))
 
 ; list the repositories containing them
-(setq package-archives '(("melpa" . "http://melpa.org/packages/")))
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+                         ("marmalade" . "https://marmalade-repo.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")))
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
