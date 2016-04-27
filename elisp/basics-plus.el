@@ -11,3 +11,6 @@
 
 (require 'smartparens-config)
 (smartparens-global-mode 1)
+
+(setq sp-show-pair-delay 0)
+(show-smartparens-global-mode t)
