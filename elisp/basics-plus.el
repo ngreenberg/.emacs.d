@@ -8,3 +8,6 @@
 
 (require 'direx)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
+
+(require 'smartparens-config)
+(smartparens-global-mode 1)

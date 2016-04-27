@@ -1,6 +1,6 @@
 ; list the packages you want
 (setq package-list '(solarized-theme
-		     smex ido-ubiquitous direx
+		     smex ido-ubiquitous direx smartparens
 		     flycheck company
 		     magit
 		     web-mode))
