@@ -53,3 +53,5 @@
 (global-set-key "\M-;" 'comment-eclipse)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(add-hook 'dired-mode-hook 'dired-hide-details-mode)

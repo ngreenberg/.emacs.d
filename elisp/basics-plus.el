@@ -12,5 +12,8 @@
 (require 'smartparens-config)
 (smartparens-global-mode 1)
 
+(add-hook 'smartparens-enabled-hook 'sp-use-smartparens-bindings)
+(sp-pair "(" ")" :wrap "C-(")
+
 (setq sp-show-pair-delay 0)
 (show-smartparens-global-mode t)
