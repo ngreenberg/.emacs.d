@@ -51,3 +51,5 @@
                   (point))))
     (comment-or-uncomment-region start end)))
 (global-set-key "\M-;" 'comment-eclipse)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
