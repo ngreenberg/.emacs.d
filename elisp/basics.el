@@ -55,3 +55,5 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (add-hook 'dired-mode-hook 'dired-hide-details-mode)
+
+(setq-default indent-tabs-mode nil)
