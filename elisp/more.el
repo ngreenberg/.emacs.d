@@ -1,4 +1,5 @@
 (load-library "syntax")
 (load-library "shells")
 (load-library "git")
+(load-library "python-config")
 (load-library "web")
