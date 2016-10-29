@@ -3,3 +3,4 @@
 (load-library "git")
 (load-library "python-config")
 (load-library "web")
+(load-library "latex")

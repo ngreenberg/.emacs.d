@@ -8,7 +8,7 @@
 (set-frame-parameter (selected-frame) 'alpha '(93 93))
 
 ;; set font-size
-(set-face-attribute 'default (selected-frame) :height 90)
+(set-face-attribute 'default (selected-frame) :height 80)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)

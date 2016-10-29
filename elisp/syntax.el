@@ -1,4 +1,4 @@
-;;flycheck
+;; flycheck
 
 (global-flycheck-mode)
 

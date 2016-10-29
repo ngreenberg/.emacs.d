@@ -5,7 +5,8 @@
 		     flycheck company
 		     magit
                      elpy py-autopep8
-		     web-mode))
+		     web-mode
+                     auctex))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
