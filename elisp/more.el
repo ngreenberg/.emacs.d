@@ -4,3 +4,4 @@
 (load-library "python-config")
 (load-library "web")
 (load-library "latex")
+(load-library "java")

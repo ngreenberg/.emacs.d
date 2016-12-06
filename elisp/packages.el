@@ -6,7 +6,8 @@
 		     magit
                      elpy py-autopep8
 		     web-mode
-                     auctex))
+                     auctex
+                     eclim))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
