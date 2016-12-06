@@ -19,3 +19,7 @@
 (show-smartparens-global-mode t)
 
 (exec-path-from-shell-initialize)
+
+(global-undo-tree-mode 1)
+
+(global-set-key (kbd "C-=") 'er/expand-region)
