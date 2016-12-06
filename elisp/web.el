@@ -15,7 +15,8 @@
 (add-to-list 'auto-mode-alist '("\\.less\\'" . web-mode))
 
 (setq web-mode-content-types-alist
-  '(("css" . "\\.less\\'")))
+  '(("css" . "\\.less\\'")
+    ("jsx" . "\\.js[x]?\\'")))
 
 (setq web-mode-enable-current-column-highlight t)
 
