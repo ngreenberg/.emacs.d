@@ -6,7 +6,7 @@
    (quote
     (solarized-theme
      smex ido-ubiquitous direx smartparens
-     undo-tree expand-region multiple-cursors
+     undo-tree expand-region multiple-cursors avy
      exec-path-from-shell
      flycheck company
      magit

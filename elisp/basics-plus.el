@@ -28,3 +28,9 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(require 'avy)
+(setq avy-keys (number-sequence ?a ?z))
+(setq avy-timeout-seconds .3)
+(global-set-key (kbd "C-'") 'avy-goto-char-timer)
+(global-set-key (kbd "M-g M-g") 'avy-goto-line)
