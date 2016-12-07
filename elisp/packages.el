@@ -5,7 +5,8 @@
  '(package-selected-packages
    (quote
     (solarized-theme
-     smex ido-ubiquitous direx smartparens undo-tree expand-region
+     smex ido-ubiquitous direx smartparens
+     undo-tree expand-region multiple-cursors
      exec-path-from-shell
      flycheck company
      magit
