@@ -30,7 +30,8 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (require 'avy)
-(setq avy-keys (number-sequence ?a ?z))
+(avy-setup-default)
+(setq avy-keys '(?n ?t ?x ?c ?v ?m ?w ?o ?e ?i ?r ?u ?a ?s ?l ?d ?k ?f ?j))
 (setq avy-timeout-seconds .3)
 (global-set-key (kbd "C-'") 'avy-goto-char-timer)
 (global-set-key (kbd "M-g M-g") 'avy-goto-line)

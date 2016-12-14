@@ -57,3 +57,5 @@
 (add-hook 'dired-mode-hook 'dired-hide-details-mode)
 
 (setq-default indent-tabs-mode nil)
+
+(delete-selection-mode 1)
