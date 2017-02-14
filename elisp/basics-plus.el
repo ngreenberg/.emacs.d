@@ -31,7 +31,35 @@
 
 (require 'avy)
 (avy-setup-default)
-(setq avy-keys '(?n ?t ?x ?c ?v ?m ?w ?o ?e ?i ?r ?u ?a ?s ?l ?d ?k ?f ?j))
+(setq avy-keys '(?a ?s ?d ?f ?j ?k ?l ;; home row keys
+                    ?w ?e ?r ?u ?i ?o ?g ?h ?x ?c ?v ?m ;; easy moves
+                    ?t ?n ?z ?p ;; harder moves
+                    ))
+
+;; use the beginning avy-keys for chords
+(defun avy-tree (lst keys)
+  "Coerce LST into a balanced tree.
+The degree of the tree is the length of KEYS.
+KEYS are placed appropriately on internal nodes."
+  (let ((len (length keys)))
+    (cl-labels
+        ((rd (ls)
+           (let ((ln (length ls)))
+             (if (< ln len)
+                 (nreverse
+                  (cl-pairlis keys
+                              (mapcar (lambda (x) (cons 'leaf x)) ls)))
+               (let ((ks (nreverse (copy-sequence keys)))
+                     res)
+                 (dolist (s (avy-subdiv ln len))
+                   (push (cons (pop ks)
+                               (if (eq s 1)
+                                   (cons 'leaf (pop ls))
+                                 (rd (avy-multipop ls s))))
+                         res))
+                 (nreverse res))))))
+      (rd lst))))
+
 (setq avy-timeout-seconds .3)
 (global-set-key (kbd "C-'") 'avy-goto-char-timer)
 (global-set-key (kbd "M-g M-g") 'avy-goto-line)
