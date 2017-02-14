@@ -78,3 +78,5 @@
           (message "File '%s' successfully renamed to '%s'"
                    name (file-name-nondirectory new-name)))))))
 (global-set-key (kbd "C-c C-r") 'rename-current-buffer-file)
+
+(setq org-log-done t)
